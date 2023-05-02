@@ -1,0 +1,22 @@
+.card-rating {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card-rating span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f5a623;
+  margin-left: 5px;
+}
+
+.card-rating i {
+  font-size: 20px;
+  color: #f5a623;
+  margin-right: 5px;
+}
+
+.shadows {
+  box-shadow: 2px 2px 2px 2px #e6e5e5dd;
+}
