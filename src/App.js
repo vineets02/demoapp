@@ -12,6 +12,9 @@ import Jewelery from "./components/jewelery/Jewelery"
 import Women from "./components/women/Women"
 import "./App.css"
 import Slider from "./components/slider/Slider"
+import Dropdown from "./components/Dropdown"
+import Categories from "./components/categories/Categories"
+// import Emp from "./components/Emp"
 
 const App = ({ products }) => {
   const [show, setShow] = useState(false)
@@ -26,19 +29,14 @@ const App = ({ products }) => {
     <React.Fragment>
       {" "}
       <Header />
-      <Slider />
+      {/* <Emp /> */}
+      {/* <Slider /> */}
       <Hero />
       <div className="container py-5">
-        <ImageSlider />
-        <div className="py-4">
-          <Women />
-        </div>
-        <div className="py-4">
-          <Electronics />
-        </div>
-        <div className="py-4">
-          <Jewelery />
-        </div>
+        <Categories />
+        <div className="py-4">{/* <Women /> */}</div>
+        <div className="py-4">{/* <Electronics /> */}</div>
+        <div className="py-4">{/* <Jewelery /> */}</div>
       </div>
       {/* <Men /> */}
       {/* <button className="btn btn-primary" onClick={handleShow}>
