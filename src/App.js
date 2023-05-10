@@ -14,6 +14,8 @@ import "./App.css"
 import Slider from "./components/slider/Slider"
 import Dropdown from "./components/Dropdown"
 import Categories from "./components/categories/Categories"
+import PasswordInput from "./components/input/PasswordInput"
+import TextArea from "./components/input/TextArea"
 // import Emp from "./components/Emp"
 
 const App = ({ products }) => {
@@ -31,9 +33,18 @@ const App = ({ products }) => {
       <Header />
       {/* <Emp /> */}
       {/* <Slider /> */}
-      <Hero />
+      {/* <Hero /> */}
       <div className="container py-5">
-        <Categories />
+        <div
+          className="form form-control  px-lg-5"
+          style={{
+            border: "1px solid rgb(234, 82, 118)",
+            boxShadow: "1px 2px 9px #F4AAB9",
+          }}
+        >
+          <PasswordInput />
+          <TextArea />
+        </div>
         <div className="py-4">{/* <Women /> */}</div>
         <div className="py-4">{/* <Electronics /> */}</div>
         <div className="py-4">{/* <Jewelery /> */}</div>
